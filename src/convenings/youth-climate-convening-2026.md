@@ -1,7 +1,6 @@
 ---
 title: Youth Climate Convening 2026
-description: "My First Youth Climate Convening: A Rollercoaster of Emotions,
-  Growth, and Hope"
+description: "From Cravings to Satisfaction"
 author: Zahida Akhter
 date: 2026-07-23T09:38:25.414Z
 image: https://drive.google.com/file/d/1I-8FSO0rpZJBydwmT7fH_7oyGgrxiXjf/view?usp=drive_link
