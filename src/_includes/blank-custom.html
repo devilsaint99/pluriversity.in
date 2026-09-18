@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    {% if description %}
+      <meta name="description" content="{{description}}"/>
+      <meta property="og:description" content="{{description}}" />
+    {% endif %}
+    <meta property="og:title" content="{{title}}"/>
+    <meta property="og:image" content="https://pluriversity.in/static/img/form-and-linkedin-header.png" />
+    <meta name="theme-color" content="#F2557A">
+  </head>
+  <body>
+    {{ content | safe }}
+  </body>
+</html>
