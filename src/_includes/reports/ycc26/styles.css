@@ -246,7 +246,7 @@ z-index:100;
 
 .header-inner{
 
-width:min(92%,1200px);
+width:min(92%,var(--container));
 
 margin:auto;
 
@@ -322,7 +322,7 @@ Hero
 
 position:relative;
 
-min-height:110vh;
+min-height:min(110vh,900px);
 
 display:flex;
 
@@ -336,7 +336,7 @@ padding:120px 0;
 
 .hero-grid{
 
-width:min(92%,1200px);
+width:min(92%,var(--container));
 
 margin:auto;
 
@@ -400,7 +400,7 @@ flex-wrap:wrap;
 
 margin-bottom:32px;
 
-place-content:center;
+place-content:start;
 
 }
 
@@ -599,7 +599,7 @@ transform:translateX(-50%);
 
 bottom:0;
 
-width:min(92%,1200px);
+width:min(92%,var(--container));
 
 height:0;
 
@@ -677,7 +677,7 @@ DOWNLOAD SECTION
 
 position:relative;
 
-padding:120px 0;
+padding:120px 120px 60px;
 
 overflow:hidden;
 
@@ -843,7 +843,7 @@ PREVIEW SECTION
 
 position:relative;
 
-padding:130px 0;
+padding:120px 120px 60px;
 
 overflow:hidden;
 
@@ -1075,7 +1075,7 @@ HIGHLIGHTS
 
 position:relative;
 
-padding:120px 0;
+padding:120px 120px 60px;
 
 }
 
@@ -1247,7 +1247,7 @@ ABOUT SECTION
 
 position:relative;
 
-padding:140px 0;
+padding:120px 0;
 
 overflow:hidden;
 
@@ -1557,6 +1557,12 @@ margin-top:50px;
 
 }
 
+.hero-actions{
+
+place-content:center;
+
+}
+
 .download-card{
 
 grid-template-columns:1fr;
@@ -1587,7 +1593,7 @@ text-align:left;
 
 grid-template-columns:1fr;
 
-min-height:420px;
+min-height:500px;
 
 }
 
@@ -1619,6 +1625,12 @@ text-align:center;
 
 }
 
+.hero-flower,
+.flower-left,
+.flower-right {
+    display: none;
+}
+
 }
 
 @media(max-width:768px){
@@ -1641,13 +1653,6 @@ overflow: hidden;
     pointer-events: none;
 }
 
-/* Hide hero flowers on tablet and below */
-.hero-flower,
-.flower-left,
-.flower-right {
-    display: none;
-}
-
 .hero-branch {
     width: 380px;
     bottom: -120px;
@@ -1663,7 +1668,7 @@ display:none;
 
 .hero h1{
 
-font-size:3.6rem;
+font-size:3rem;
 
 }
 
